@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFD Garten - Professionelle Gartenpflege und Gestaltung aus einer Hand</title>
+  <meta name="description" content="FFD Garten - Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen. 30 Jahre Erfahrung in Linz und Umgebung.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <div class="logo-icon">🌳</div>
+      <div class="logo-text">FFD</div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#services">Dienstleistungen</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop CTA Button -->
+    <a href="#contact" class="cta-button desktop-cta">Jetzt Termin sichern</a>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">Über uns</a></li>
+      <li><a href="#services" onclick="closeMobileMenu()">Dienstleistungen</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Kontakt</a></li>
+    </ul>
+    <a href="#contact" class="cta-button mobile-cta" onclick="closeMobileMenu()">Jetzt Termin sichern</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Professionelle Gartenpflege aus einer Hand</h1>
+    <p class="hero-subtitle">30 Jahre Erfahrung | Persönlich & zuverlässig | Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Kostenloses Angebot anfordern</a>
+      <a href="tel:+43676410249" class="btn-secondary">Jetzt anrufen</a>
+    </div>
+  </div>
+</section>
+
+<!-- USP Section -->
+<section class="usp-section">
+  <div class="container">
+    <h2 class="section-title">Warum FFD Garten?</h2>
+    <div class="usp-grid">
+      <div class="usp-card">
+        <div class="usp-icon">⏰</div>
+        <h3>30 Jahre Erfahrung</h3>
+        <p>Langjährige Expertise in allen Bereichen der Gartenpflege und Landschaftsgestaltung</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🎯</div>
+        <h3>Persönlich & Zuverlässig</h3>
+        <p>Individueller Service mit persönlicher Beratung und termingerechter Umsetzung</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🏆</div>
+        <h3>Rundum-Service</h3>
+        <p>Von der Planung bis zur Umsetzung - alles aus einer Hand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">Unsere Dienstleistungen</h2>
+    <div class="services-grid">
+      <div class="service-card" data-service="landschaftsgestaltung">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Landschaftsgestaltung</h3>
+          <p class="service-description">Von der Planung bis zur Umsetzung stehen wir Ihnen bei der Gestaltung Ihres Gartens zur Seite. Wir nehmen uns die Zeit, Ihre Wünsche und Vorstellungen zu verstehen und sie in ein maßgeschneidertes Konzept umzusetzen.</p>
+        </div>
+      </div>
+      <div class="service-card" data-service="gartenpflege">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Gartenpflege</h3>
+          <p class="service-description">Ein schöner Garten erfordert regelmäßige Pflege. Unsere erfahrenen Gärtner kümmern sich um alles, von der Rasenpflege über die Bewässerung bis hin zur Pflanzenpflege, damit Ihr Garten das ganze Jahr über in Bestform bleibt.</p>
+        </div>
+      </div>
+      <div class="service-card" data-service="baumfaellung">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Baumfällung</h3>
+          <p class="service-description">Unser erfahrenes Team verfügt über das Fachwissen und die Ausrüstung, um Bäume jeder Größe sicher und präzise zu fällen. Wir führen eine gründliche Bewertung durch, um den besten Ansatz für die Fällung zu ermitteln.</p>
+        </div>
+      </div>
+      <div class="service-card" data-service="reinigung">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Reinigungsdienstleistungen</h3>
+          <p class="service-description">Professionelle Reinigungsdienstleistungen für Ihr Zuhause und Büro. Wir sorgen für Sauberkeit und Hygiene mit umweltfreundlichen Produkten und modernen Reinigungstechniken.</p>
+        </div>
+      </div>
+      <div class="service-card" data-service="renovierung">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Renovierungs- und Sanierungsarbeiten</h3>
+          <p class="service-description">Von kleineren Reparaturen bis hin zu größeren Renovierungsprojekten - wir sind Ihr zuverlässiger Partner für alle Bau- und Sanierungsarbeiten rund um Ihr Zuhause.</p>
+        </div>
+      </div>
+      <div class="service-card" data-service="abbruch">
+        <div class="service-image"></div>
+        <div class="service-content">
+          <h3 class="service-title">Stemmarbeiten und Abbruchdienstleistungen</h3>
+          <p class="service-description">Professionelle Abbruch- und Stemmarbeiten für Renovierungen und Neubauten. Wir arbeiten präzise und sicher, um Ihre Projekte termingerecht abzuschließen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Service Details -->
+<div id="serviceModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modalTitle"></h2>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p class="modal-description" id="modalDescription"></p>
+      <div class="service-details" id="modalDetails"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#contact" class="btn-primary" onclick="closeModal()">Jetzt Angebot anfordern</a>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Über FFD Garten</h2>
+        <p>Seit über 30 Jahren sind wir Ihr zuverlässiger Partner für Gartenbau, Landschaftsgestaltung und Reinigungsdienstleistungen in Linz und Umgebung. Unser erfahrenes Team steht für Qualität, Zuverlässigkeit und persönlichen Service.</p>
+        <p>Wir nehmen uns die Zeit, Ihre Wünsche zu verstehen und entwickeln gemeinsam mit Ihnen individuelle Lösungen für Ihren Garten. Von der ersten Beratung bis zur finalen Umsetzung begleiten wir Sie mit Fachwissen und Leidenschaft.</p>
+        <p>Vertrauen Sie auf unsere Erfahrung und lassen Sie uns gemeinsam Ihren Traumgarten verwirklichen!</p>
+      </div>
+      <div class="about-image">
+        🏡
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Kontaktieren Sie uns!</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Unser Kundendienst ist rund um die Uhr für Sie da.</h3>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Adresse</strong><br>
+            Uhlandgasse 22, 4020 Linz
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Telefonnummer</strong><br>
+            +43 676 410 249<br>
+            +43 664 998 755
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <strong>E-Mail</strong><br>
+            FFD-Garten@outlook.com
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Schreiben Sie uns eine Nachricht</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail Adresse *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service">Gewünschte Dienstleistung (optional)</label>
+            <select id="service" name="service">
+              <option value="">Bitte wählen...</option>
+              <option value="Landschaftsgestaltung">Landschaftsgestaltung</option>
+              <option value="Gartenpflege">Gartenpflege</option>
+              <option value="Baumfällung">Baumfällung</option>
+              <option value="Reinigung">Reinigungsdienstleistungen</option>
+              <option value="Renovierung">Renovierungs- und Sanierungsarbeiten</option>
+              <option value="Abbruch">Stemmarbeiten und Abbruchdienstleistungen</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..." required></textarea>
+          </div>
+
+          <!-- Honeypot field for spam protection -->
+          <input type="text" name="_gotcha" style="display:none !important">
+
+          <!-- Formspree configuration -->
+          <input type="hidden" name="_subject" value="Neue Anfrage von FFD Garten Website">
+          <input type="hidden" name="_next" value="danke.html">
+
+          <button type="submit" class="btn-primary form-submit-btn">
+            <span class="btn-text">Nachricht senden</span>
+            <span class="btn-loading" style="display: none;">Wird gesendet...</span>
+          </button>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FFD Garten</h4>
+        <p>Ihr Partner für professionelle Gartenpflege und Landschaftsgestaltung in Linz und Umgebung.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Dienstleistungen</h4>
+        <ul>
+          <li><a href="#services">Landschaftsgestaltung</a></li>
+          <li><a href="#services">Gartenpflege</a></li>
+          <li><a href="#services">Baumfällung</a></li>
+          <li><a href="#services">Reinigungsdienstleistungen</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Uhlandgasse 22, 4020 Linz</li>
+          <li>+43 676 410 249</li>
+          <li>FFD-Garten@outlook.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FFD Garten. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
