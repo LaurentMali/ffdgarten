@@ -12,8 +12,7 @@
 <header>
   <div class="header-content">
     <div class="logo">
-      <div class="logo-icon">🌳</div>
-      <div class="logo-text">FFD</div>
+      <img src="img/ffd-logo.png" alt="FFD Garten Logo" class="logo-image">
     </div>
 
     <!-- Desktop Navigation -->
@@ -50,7 +49,7 @@
 </header>
 
 <!-- Hero Section -->
-<section id="home" class="hero">
+<section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/hero-garden.png');">
   <div class="hero-content">
     <h1>Professionelle Gartenpflege aus einer Hand</h1>
     <p class="hero-subtitle">30 Jahre Erfahrung | Persönlich & zuverlässig | Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen</p>
@@ -90,81 +89,302 @@
   <div class="container">
     <h2 class="section-title">Unsere Dienstleistungen</h2>
     <div class="services-grid">
+
+      <!-- Landschaftsgestaltung -->
       <div class="service-card" data-service="landschaftsgestaltung">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/landschaftsgestaltung.png')"></div>
         <div class="service-content">
           <h3 class="service-title">Landschaftsgestaltung</h3>
           <p class="service-description">Von der Planung bis zur Umsetzung stehen wir Ihnen bei der Gestaltung Ihres Gartens zur Seite. Wir nehmen uns die Zeit, Ihre Wünsche und Vorstellungen zu verstehen und sie in ein maßgeschneidertes Konzept umzusetzen.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zur Landschaftsgestaltung gehört:</h4>
+            <p class="expanded-description">Wir verwandeln Ihren Außenbereich in eine grüne Oase. Von der ersten Idee bis zur finalen Umsetzung begleiten wir Sie bei der kompletten Neugestaltung oder Überarbeitung Ihres Gartens.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🎨 Gartenplanung & Design</h5>
+                <p>Professionelle Planung und 3D-Visualisierung Ihres Traumgartens</p>
+              </div>
+              <div class="detail-item">
+                <h5>🏗️ Terrassen- & Wegebau</h5>
+                <p>Gestaltung von Terrassen, Gehwegen und Auffahrten mit hochwertigen Materialien</p>
+              </div>
+              <div class="detail-item">
+                <h5>🔒 Zäune & Sichtschutz</h5>
+                <p>Individuelle Lösungen für Privatsphäre und Abgrenzung</p>
+              </div>
+              <div class="detail-item">
+                <h5>💧 Wasserspiele & Teiche</h5>
+                <p>Planung und Bau von Gartenteichen, Brunnen und Wasserelementen</p>
+              </div>
+              <div class="detail-item">
+                <h5>💡 Beleuchtungskonzepte</h5>
+                <p>Stimmungsvolle Gartenbeleuchtung für Tag und Nacht</p>
+              </div>
+              <div class="detail-item">
+                <h5>🌱 Rasenflächen</h5>
+                <p>Neuanlage und Sanierung von Rasenflächen aller Art</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Gartenpflege -->
       <div class="service-card" data-service="gartenpflege">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/gartenpflege.png')"></div>
         <div class="service-content">
           <h3 class="service-title">Gartenpflege</h3>
           <p class="service-description">Ein schöner Garten erfordert regelmäßige Pflege. Unsere erfahrenen Gärtner kümmern sich um alles, von der Rasenpflege über die Bewässerung bis hin zur Pflanzenpflege, damit Ihr Garten das ganze Jahr über in Bestform bleibt.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zur Gartenpflege gehört:</h4>
+            <p class="expanded-description">Regelmäßige, professionelle Gartenpflege sorgt dafür, dass Ihr Garten das ganze Jahr über gepflegt und gesund aussieht. Unser Service umfasst alle Aspekte der Gartenpflege.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🌱 Rasenpflege</h5>
+                <p>Mähen, Düngen, Vertikutieren und Nachsaat für einen perfekten Rasen</p>
+              </div>
+              <div class="detail-item">
+                <h5>✂️ Heckenschnitt</h5>
+                <p>Fachgerechter Schnitt von Hecken und Sträuchern aller Art</p>
+              </div>
+              <div class="detail-item">
+                <h5>🌿 Unkrautbekämpfung</h5>
+                <p>Umweltschonende Entfernung von Unkraut in Beeten und auf Wegen</p>
+              </div>
+              <div class="detail-item">
+                <h5>💧 Bewässerung</h5>
+                <p>Professionelle Bewässerungssysteme und regelmäßige Wassergaben</p>
+              </div>
+              <div class="detail-item">
+                <h5>🌱 Düngung & Pflanzenschutz</h5>
+                <p>Bedarfsgerechte Düngung und Schutz vor Schädlingen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🍂 Laubentsorgung</h5>
+                <p>Herbstliche Laubentfernung und fachgerechte Entsorgung</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Baumfällung -->
       <div class="service-card" data-service="baumfaellung">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/baumfaellung.png')"></div>
         <div class="service-content">
           <h3 class="service-title">Baumfällung</h3>
           <p class="service-description">Unser erfahrenes Team verfügt über das Fachwissen und die Ausrüstung, um Bäume jeder Größe sicher und präzise zu fällen. Wir führen eine gründliche Bewertung durch, um den besten Ansatz für die Fällung zu ermitteln.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zur Baumfällung gehört:</h4>
+            <p class="expanded-description">Professionelle und sichere Baumfällung durch unser erfahrenes Team. Wir verfügen über das notwendige Equipment und die Expertise, um Bäume jeder Größe sicher zu entfernen.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🔍 Begutachtung & Beratung</h5>
+                <p>Professionelle Einschätzung des Baumzustands und Fällnotwendigkeit</p>
+              </div>
+              <div class="detail-item">
+                <h5>🪢 Seilklettertechnik</h5>
+                <p>Schonende Fällung mittels Seilklettertechnik in beengten Verhältnissen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🚚 Schwerfällung</h5>
+                <p>Komplettfällung großer Bäume mit schwerem Gerät</p>
+              </div>
+              <div class="detail-item">
+                <h5>📋 Genehmigungsservice</h5>
+                <p>Unterstützung bei der Beantragung notwendiger Fällgenehmigungen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🪵 Holzverwertung</h5>
+                <p>Fachgerechte Aufarbeitung und Verwertung des Holzes</p>
+              </div>
+              <div class="detail-item">
+                <h5>🛡️ Sicherheitsmaßnahmen</h5>
+                <p>Umfassende Absicherung der Baustelle und angrenzender Bereiche</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Reinigung -->
       <div class="service-card" data-service="reinigung">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/reinigungsdienstleistung.png')"></div>
         <div class="service-content">
           <h3 class="service-title">Reinigungsdienstleistungen</h3>
           <p class="service-description">Professionelle Reinigungsdienstleistungen für Ihr Zuhause und Büro. Wir sorgen für Sauberkeit und Hygiene mit umweltfreundlichen Produkten und modernen Reinigungstechniken.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zu den Reinigungsdienstleistungen gehört:</h4>
+            <p class="expanded-description">Professionelle Reinigungsdienstleistungen für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit und Hygiene mit umweltfreundlichen Produkten.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🏠 Hausreinigung</h5>
+                <p>Regelmäßige oder einmalige Reinigung von Wohnräumen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🏢 Büroreinigung</h5>
+                <p>Professionelle Reinigung von Büros und Geschäftsräumen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🪟 Fensterreinigung</h5>
+                <p>Streifenfreie Reinigung von Fenstern und Glasflächen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🧽 Grundreinigung</h5>
+                <p>Intensive Tiefenreinigung bei Umzug oder nach Renovierung</p>
+              </div>
+              <div class="detail-item">
+                <h5>🗞️ Teppichreinigung</h5>
+                <p>Professionelle Reinigung und Pflege von Teppichen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🌿 Außenreinigung</h5>
+                <p>Reinigung von Terrassen, Fassaden und Gehwegen</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Renovierung -->
       <div class="service-card" data-service="renovierung">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/renovierung.png')"></div>
         <div class="service-content">
-          <h3 class="service-title">Renovierungs- und Sanierungsarbeiten</h3>
-          <p class="service-description">Von kleineren Reparaturen bis hin zu größeren Renovierungsprojekten - wir sind Ihr zuverlässiger Partner für alle Bau- und Sanierungsarbeiten rund um Ihr Zuhause.</p>
+          <h3 class="service-title">Renovierungsarbeiten</h3>
+          <p class="service-description">Kompetente Renovierungsarbeiten für Innen- und Außenbereiche. Von kleinen Ausbesserungen bis zu umfassenden Sanierungen - wir setzen Ihre Projekte professionell um.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zu den Renovierungsarbeiten gehört:</h4>
+            <p class="expanded-description">Professionelle Renovierungsarbeiten für Ihr Zuhause oder Gewerbeimmobilie. Wir übernehmen alle Arbeiten von der Planung bis zur finalen Umsetzung.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🎨 Malerarbeiten</h5>
+                <p>Innen- und Außenanstriche mit hochwertigen Farben</p>
+              </div>
+              <div class="detail-item">
+                <h5>🔨 Bodenverlegung</h5>
+                <p>Verlegung von Parkett, Laminat, Fliesen und anderen Bodenbelägen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🏗️ Trockenbau</h5>
+                <p>Errichtung von Wänden, Decken und Raumteilern</p>
+              </div>
+              <div class="detail-item">
+                <h5>🚪 Türen & Fenster</h5>
+                <p>Einbau und Sanierung von Türen und Fenstern</p>
+              </div>
+              <div class="detail-item">
+                <h5>🛁 Badezimmersanierung</h5>
+                <p>Komplette oder teilweise Modernisierung von Badezimmern</p>
+              </div>
+              <div class="detail-item">
+                <h5>🏠 Fassadensanierung</h5>
+                <p>Auffrischung und Sanierung von Außenfassaden</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Abbrucharbeiten -->
       <div class="service-card" data-service="abbruch">
-        <div class="service-image"></div>
+        <div class="service-image" style="background-image: url('img/abbruch.png')"></div>
         <div class="service-content">
-          <h3 class="service-title">Stemmarbeiten und Abbruchdienstleistungen</h3>
-          <p class="service-description">Professionelle Abbruch- und Stemmarbeiten für Renovierungen und Neubauten. Wir arbeiten präzise und sicher, um Ihre Projekte termingerecht abzuschließen.</p>
+          <h3 class="service-title">Abbrucharbeiten</h3>
+          <p class="service-description">Professionelle Abbruch- und Entrümpelungsarbeiten. Wir übernehmen den fachgerechten Rückbau von Gebäuden, Mauern und anderen Bauwerken sowie die ordnungsgemäße Entsorgung.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zu den Abbrucharbeiten gehört:</h4>
+            <p class="expanded-description">Sichere und effiziente Abbrucharbeiten aller Art. Von kleinen Rückbauarbeiten bis zum kompletten Gebäudeabriss - wir führen alle Arbeiten unter Einhaltung aller Sicherheits- und Umweltvorschriften durch.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🏚️ Gebäudeabbruch</h5>
+                <p>Kompletter oder teilweiser Abbruch von Gebäuden</p>
+              </div>
+              <div class="detail-item">
+                <h5>🧱 Mauerdurchbrüche</h5>
+                <p>Präzise Durchbrüche für Türen, Fenster oder Durchgänge</p>
+              </div>
+              <div class="detail-item">
+                <h5>🏗️ Entkernung</h5>
+                <p>Fachgerechte Entkernung von Gebäuden für Sanierungen</p>
+              </div>
+              <div class="detail-item">
+                <h5>📦 Entrümpelung</h5>
+                <p>Komplette Räumung von Häusern, Wohnungen und Kellern</p>
+              </div>
+              <div class="detail-item">
+                <h5>♻️ Entsorgung</h5>
+                <p>Umweltgerechte Entsorgung und Recycling von Abbruchmaterial</p>
+              </div>
+              <div class="detail-item">
+                <h5>🛡️ Schadstoffsanierung</h5>
+                <p>Fachgerechter Umgang mit Asbest und anderen Schadstoffen</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
-<!-- Modal for Service Details -->
-<div id="serviceModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2 id="modalTitle"></h2>
-      <span class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <p class="modal-description" id="modalDescription"></p>
-      <div class="service-details" id="modalDetails"></div>
-    </div>
-    <div class="modal-footer">
-      <a href="#contact" class="btn-primary" onclick="closeModal()">Jetzt Angebot anfordern</a>
-    </div>
-  </div>
-</div>
 
 <!-- About Section -->
 <section id="about" class="about-section">
   <div class="container">
     <div class="about-content">
       <div class="about-text">
-        <h2>Über FFD Garten</h2>
-        <p>Seit über 30 Jahren sind wir Ihr zuverlässiger Partner für Gartenbau, Landschaftsgestaltung und Reinigungsdienstleistungen in Linz und Umgebung. Unser erfahrenes Team steht für Qualität, Zuverlässigkeit und persönlichen Service.</p>
-        <p>Wir nehmen uns die Zeit, Ihre Wünsche zu verstehen und entwickeln gemeinsam mit Ihnen individuelle Lösungen für Ihren Garten. Von der ersten Beratung bis zur finalen Umsetzung begleiten wir Sie mit Fachwissen und Leidenschaft.</p>
-        <p>Vertrauen Sie auf unsere Erfahrung und lassen Sie uns gemeinsam Ihren Traumgarten verwirklichen!</p>
+        <h2 class="section-title">Über FFD Garten</h2>
+        <p>Mit über 30 Jahren Erfahrung sind wir Ihr vertrauenswürdiger Partner für alle Garten- und Baudienstleistungen in Linz und Umgebung. Als Familienunternehmen legen wir großen Wert auf persönliche Betreuung, Qualität und Zuverlässigkeit.</p>
+        <p>Unser Team besteht aus qualifizierten Fachkräften, die mit Leidenschaft und Expertise bei der Sache sind. Von der Gartengestaltung über Baumpflege bis hin zu Renovierungsarbeiten - wir bieten Ihnen alles aus einer Hand.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>30+</h3>
+            <p>Jahre Erfahrung</p>
+          </div>
+          <div class="stat">
+            <h3>1000+</h3>
+            <p>Zufriedene Kunden</p>
+          </div>
+          <div class="stat">
+            <h3>100%</h3>
+            <p>Kundenzufriedenheit</p>
+          </div>
+        </div>
       </div>
       <div class="about-image">
-        🏡
+        <img src="img/about-garden.png" alt="FFD Garten Team">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Bereit für Ihren Traumgarten?</h2>
+      <p>Kontaktieren Sie uns noch heute für ein unverbindliches Beratungsgespräch</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Kostenloses Angebot</a>
+        <a href="tel:+43676410249" class="btn-secondary">Jetzt anrufen</a>
       </div>
     </div>
   </div>
@@ -173,79 +393,56 @@
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
   <div class="container">
-    <h2 class="section-title">Kontaktieren Sie uns!</h2>
+    <h2 class="section-title">Kontaktieren Sie uns</h2>
     <div class="contact-content">
-      <div class="contact-info">
-        <h3>Unser Kundendienst ist rund um die Uhr für Sie da.</h3>
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <strong>Adresse</strong><br>
-            Uhlandgasse 22, 4020 Linz
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <strong>Telefonnummer</strong><br>
-            +43 676 410 249<br>
-            +43 664 998 755
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <strong>E-Mail</strong><br>
-            FFD-Garten@outlook.com
-          </div>
-        </div>
-      </div>
       <div class="contact-form">
-        <h3>Schreiben Sie uns eine Nachricht</h3>
         <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
           <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" name="name" placeholder="Ihr Name" required>
           </div>
           <div class="form-group">
-            <label for="email">E-Mail Adresse *</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" name="email" placeholder="Ihre E-Mail" required>
           </div>
           <div class="form-group">
-            <label for="phone">Telefonnummer (optional)</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" name="phone" placeholder="Ihre Telefonnummer">
           </div>
           <div class="form-group">
-            <label for="service">Gewünschte Dienstleistung (optional)</label>
-            <select id="service" name="service">
-              <option value="">Bitte wählen...</option>
-              <option value="Landschaftsgestaltung">Landschaftsgestaltung</option>
-              <option value="Gartenpflege">Gartenpflege</option>
-              <option value="Baumfällung">Baumfällung</option>
-              <option value="Reinigung">Reinigungsdienstleistungen</option>
-              <option value="Renovierung">Renovierungs- und Sanierungsarbeiten</option>
-              <option value="Abbruch">Stemmarbeiten und Abbruchdienstleistungen</option>
+            <select name="service" required>
+              <option value="">Wählen Sie eine Dienstleistung</option>
+              <option value="landschaftsgestaltung">Landschaftsgestaltung</option>
+              <option value="gartenpflege">Gartenpflege</option>
+              <option value="baumfaellung">Baumfällung</option>
+              <option value="reinigung">Reinigungsdienstleistungen</option>
+              <option value="renovierung">Renovierungsarbeiten</option>
+              <option value="abbruch">Abbrucharbeiten</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Nachricht *</label>
-            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..." required></textarea>
+            <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
           </div>
-
-          <!-- Honeypot field for spam protection -->
-          <input type="text" name="_gotcha" style="display:none !important">
-
-          <!-- Formspree configuration -->
-          <input type="hidden" name="_subject" value="Neue Anfrage von FFD Garten Website">
-          <input type="hidden" name="_next" value="danke.html">
-
-          <button type="submit" class="btn-primary form-submit-btn">
-            <span class="btn-text">Nachricht senden</span>
-            <span class="btn-loading" style="display: none;">Wird gesendet...</span>
-          </button>
-
-          <div class="form-status" id="formStatus"></div>
+          <button type="submit" class="btn-primary">Nachricht senden</button>
         </form>
+      </div>
+      <div class="contact-info">
+        <h3>Kontaktinformationen</h3>
+        <div class="info-item">
+          <h4>📍 Adresse</h4>
+          <p>Musterstraße 123<br>4020 Linz, Österreich</p>
+        </div>
+        <div class="info-item">
+          <h4>📞 Telefon</h4>
+          <p><a href="tel:+43676410249">+43 676 410 249</a></p>
+        </div>
+        <div class="info-item">
+          <h4>📧 E-Mail</h4>
+          <p><a href="mailto:info@ffd-garten.at">info@ffd-garten.at</a></p>
+        </div>
+        <div class="info-item">
+          <h4>🕐 Öffnungszeiten</h4>
+          <p>Mo-Fr: 7:00 - 18:00 Uhr<br>
+            Sa: 8:00 - 14:00 Uhr<br>
+            Notfalldienst: 24/7</p>
+        </div>
       </div>
     </div>
   </div>
@@ -255,30 +452,39 @@
 <footer>
   <div class="container">
     <div class="footer-content">
-      <div class="footer-section">
+      <div class="footer-column">
         <h4>FFD Garten</h4>
-        <p>Ihr Partner für professionelle Gartenpflege und Landschaftsgestaltung in Linz und Umgebung.</p>
+        <p>Ihr zuverlässiger Partner für Gartenbau und mehr seit über 30 Jahren.</p>
       </div>
-      <div class="footer-section">
+      <div class="footer-column">
+        <h4>Schnelllinks</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#services">Dienstleistungen</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
         <h4>Dienstleistungen</h4>
         <ul>
           <li><a href="#services">Landschaftsgestaltung</a></li>
           <li><a href="#services">Gartenpflege</a></li>
           <li><a href="#services">Baumfällung</a></li>
-          <li><a href="#services">Reinigungsdienstleistungen</a></li>
+          <li><a href="#services">Renovierungsarbeiten</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>Kontakt</h4>
-        <ul>
-          <li>Uhlandgasse 22, 4020 Linz</li>
-          <li>+43 676 410 249</li>
-          <li>FFD-Garten@outlook.com</li>
-        </ul>
+      <div class="footer-column">
+        <h4>Folgen Sie uns</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 FFD Garten. Alle Rechte vorbehalten.</p>
+      <p>&copy; 2024 FFD Garten. Alle Rechte vorbehalten. | <a href="#">Datenschutz</a> | <a href="#">Impressum</a></p>
     </div>
   </div>
 </footer>
