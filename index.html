@@ -44,18 +44,28 @@
       <li><a href="#services" onclick="closeMobileMenu()">Dienstleistungen</a></li>
       <li><a href="#contact" onclick="closeMobileMenu()">Kontakt</a></li>
     </ul>
-    <a href="#contact" class="cta-button mobile-cta" onclick="closeMobileMenu()">Jetzt Termin sichern</a>
   </nav>
 </header>
 
 <!-- Hero Section -->
-<section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/hero-garden.png');">
+<section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('img/hero-garden.png');">
   <div class="hero-content">
-    <h1>Professionelle Gartenpflege aus einer Hand</h1>
-    <p class="hero-subtitle">30 Jahre Erfahrung | Persönlich & zuverlässig | Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen</p>
+    <div class="hero-badge">FFD-Garten - Ihr Gartenprofi in Linz & Umgebung</div>
+    <h1>Professionelle Gartenpflege<br><span class="highlight">aus einer Hand</span></h1>
+    <p class="hero-subtitle">
+      <span class="check-item">✓ 10+ Jahre Erfahrung</span>
+      <span class="check-item">✓ Persönlich & zuverlässig</span>
+      <span class="check-item">✓ Rundum-Service</span>
+    </p>
     <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Kostenloses Angebot anfordern</a>
-      <a href="tel:+43676410249" class="btn-secondary">Jetzt anrufen</a>
+      <a href="#contact" class="btn-primary">
+        <span>Kostenloses Angebot anfordern</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="tel:+43676410249" class="btn-secondary">
+        <span class="phone-icon">📞</span>
+        Jetzt anrufen
+      </a>
     </div>
   </div>
 </section>
@@ -67,7 +77,7 @@
     <div class="usp-grid">
       <div class="usp-card">
         <div class="usp-icon">⏰</div>
-        <h3>30 Jahre Erfahrung</h3>
+        <h3>Jahrzehnte an Erfahrung</h3>
         <p>Langjährige Expertise in allen Bereichen der Gartenpflege und Landschaftsgestaltung</p>
       </div>
       <div class="usp-card">
@@ -92,7 +102,16 @@
 
       <!-- Landschaftsgestaltung -->
       <div class="service-card" data-service="landschaftsgestaltung">
-        <div class="service-image" style="background-image: url('img/landschaftsgestaltung.png')"></div>
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/landschaftsgestaltung-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/landschaftsgestaltung-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Landschaftsgestaltung</h3>
           <p class="service-description">Von der Planung bis zur Umsetzung stehen wir Ihnen bei der Gestaltung Ihres Gartens zur Seite. Wir nehmen uns die Zeit, Ihre Wünsche und Vorstellungen zu verstehen und sie in ein maßgeschneidertes Konzept umzusetzen.</p>
@@ -105,7 +124,7 @@
             <div class="details-grid">
               <div class="detail-item">
                 <h5>🎨 Gartenplanung & Design</h5>
-                <p>Professionelle Planung und 3D-Visualisierung Ihres Traumgartens</p>
+                <p>Persönliche Planung und eingehen auf individuelle Wünsche</p>
               </div>
               <div class="detail-item">
                 <h5>🏗️ Terrassen- & Wegebau</h5>
@@ -114,10 +133,6 @@
               <div class="detail-item">
                 <h5>🔒 Zäune & Sichtschutz</h5>
                 <p>Individuelle Lösungen für Privatsphäre und Abgrenzung</p>
-              </div>
-              <div class="detail-item">
-                <h5>💧 Wasserspiele & Teiche</h5>
-                <p>Planung und Bau von Gartenteichen, Brunnen und Wasserelementen</p>
               </div>
               <div class="detail-item">
                 <h5>💡 Beleuchtungskonzepte</h5>
@@ -134,7 +149,16 @@
 
       <!-- Gartenpflege -->
       <div class="service-card" data-service="gartenpflege">
-        <div class="service-image" style="background-image: url('img/gartenpflege.png')"></div>
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/rasen-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/rasen-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Gartenpflege</h3>
           <p class="service-description">Ein schöner Garten erfordert regelmäßige Pflege. Unsere erfahrenen Gärtner kümmern sich um alles, von der Rasenpflege über die Bewässerung bis hin zur Pflanzenpflege, damit Ihr Garten das ganze Jahr über in Bestform bleibt.</p>
@@ -176,7 +200,16 @@
 
       <!-- Baumfällung -->
       <div class="service-card" data-service="baumfaellung">
-        <div class="service-image" style="background-image: url('img/baumfaellung.png')"></div>
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/baum-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/baum-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Baumfällung</h3>
           <p class="service-description">Unser erfahrenes Team verfügt über das Fachwissen und die Ausrüstung, um Bäume jeder Größe sicher und präzise zu fällen. Wir führen eine gründliche Bewertung durch, um den besten Ansatz für die Fällung zu ermitteln.</p>
@@ -190,10 +223,6 @@
               <div class="detail-item">
                 <h5>🔍 Begutachtung & Beratung</h5>
                 <p>Professionelle Einschätzung des Baumzustands und Fällnotwendigkeit</p>
-              </div>
-              <div class="detail-item">
-                <h5>🪢 Seilklettertechnik</h5>
-                <p>Schonende Fällung mittels Seilklettertechnik in beengten Verhältnissen</p>
               </div>
               <div class="detail-item">
                 <h5>🚚 Schwerfällung</h5>
@@ -218,7 +247,16 @@
 
       <!-- Reinigung -->
       <div class="service-card" data-service="reinigung">
-        <div class="service-image" style="background-image: url('img/reinigungsdienstleistung.png')"></div>
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/pool-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/pool-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Reinigungsdienstleistungen</h3>
           <p class="service-description">Professionelle Reinigungsdienstleistungen für Ihr Zuhause und Büro. Wir sorgen für Sauberkeit und Hygiene mit umweltfreundlichen Produkten und modernen Reinigungstechniken.</p>
@@ -253,17 +291,30 @@
                 <h5>🌿 Außenreinigung</h5>
                 <p>Reinigung von Terrassen, Fassaden und Gehwegen</p>
               </div>
+              <div class="detail-item">
+                <h5>☀️ Reinigen von Solaranlagen</h5>
+                <p>Gründliche Reinigung von Solarpaneelen</p>
             </div>
           </div>
         </div>
       </div>
+      </div>
 
       <!-- Renovierung -->
       <div class="service-card" data-service="renovierung">
-        <div class="service-image" style="background-image: url('img/renovierung.png')"></div>
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/renovierung-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/renovierung-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Renovierungsarbeiten</h3>
-          <p class="service-description">Kompetente Renovierungsarbeiten für Innen- und Außenbereiche. Von kleinen Ausbesserungen bis zu umfassenden Sanierungen - wir setzen Ihre Projekte professionell um.</p>
+          <p class="service-description">Kompetente Renovierungsarbeiten für Innen- und Außenbereiche. Von kleinen Ausbesserungen bis zu umfassenden Sanierungen - wir setzen Ihre Projekte professionell, maßgeschneidert und gründlich um.</p>
           <button class="service-expand-btn">Mehr erfahren ↓</button>
         </div>
         <div class="service-details-expanded">
@@ -302,10 +353,21 @@
 
       <!-- Abbrucharbeiten -->
       <div class="service-card" data-service="abbruch">
-        <div class="service-image" style="background-image: url('img/abbruch.png')"></div>
+        <div class="image-carousel">
+          <div class="carousel-container">
+            <div class="carousel-images">
+              <img src="img/abbruch-1.png" alt="Abbrucharbeit 1" class="carousel-image active">
+              <img src="img/abbruch-2.png" alt="Abbrucharbeit 2" class="carousel-image">
+              <img src="img/abbruch-3.png" alt="Abbrucharbeit 3" class="carousel-image">
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
         <div class="service-content">
           <h3 class="service-title">Abbrucharbeiten</h3>
-          <p class="service-description">Professionelle Abbruch- und Entrümpelungsarbeiten. Wir übernehmen den fachgerechten Rückbau von Gebäuden, Mauern und anderen Bauwerken sowie die ordnungsgemäße Entsorgung.</p>
+          <p class="service-description">Professionelle Abbruch- und Entrümpelungsarbeiten. Wir übernehmen den fachgerechten Rückbau von Gebäuden, Mauern und anderen Bauwerken.</p>
           <button class="service-expand-btn">Mehr erfahren ↓</button>
         </div>
         <div class="service-details-expanded">
@@ -341,7 +403,72 @@
           </div>
         </div>
       </div>
-
+        <!-- Schneeräumung und Winterdienst -->
+        <div class="service-card" data-service="schneeraeumung">
+          <div class="service-image" style="background-image: url('img/schnee.png')"></div>
+          <div class="service-content">
+            <h3 class="service-title">Schneeräumung</h3>
+            <p class="service-description">Professioneller Winterdienst für sichere Wege und Zufahrten. Wir sorgen dafür, dass Sie auch bei Schnee und Eis sicher unterwegs sind - zuverlässig und rechtzeitig.</p>
+            <button class="service-expand-btn">Mehr erfahren ↓</button>
+          </div>
+          <div class="service-details-expanded">
+            <div class="service-details-content">
+              <h4>Was zur Schneeräumung & dem Winterdienst gehört:</h4>
+              <p class="expanded-description">Zuverlässiger Winterdienst für Privat- und Geschäftskunden. Wir garantieren sichere und geräumte Wege, Einfahrten und Parkplätze während der gesamten Wintersaison.</p>
+              <div class="details-grid">
+                <div class="detail-item">
+                  <h5>❄️ Schneeräumung</h5>
+                  <p>Räumung von Gehwegen, Einfahrten, Parkplätzen und Hofflächen</p>
+                </div>
+                <div class="detail-item">
+                  <h5>⏰ 24/7 Notdienst</h5>
+                  <p>Winterdienst rund um die Uhr, auch an Wochenenden und Feiertagen</p>
+                </div>
+                <div class="detail-item">
+                  <h5>📋 Räumpflicht-Service</h5>
+                  <p>Übernahme Ihrer gesetzlichen Räum- und Streupflicht</p>
+                </div>
+                <div class="detail-item">
+                  <h5>🏢 Gewerbe-Winterdienst</h5>
+                  <p>Spezielle Betreuung von Firmengeländen und Geschäftsobjekten</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Hausmeisterservice -->
+      <div class="service-card" data-service="hausmeister">
+        <div class="service-content">
+          <h3 class="service-title">Hausmeisterservice</h3>
+          <p class="service-description">Zuverlässiger Hausmeisterservice für Wohn- und Geschäftsimmobilien. Wir kümmern uns um die laufende Betreuung und Instandhaltung Ihrer Immobilie - professionell und verlässlich.</p>
+          <button class="service-expand-btn">Mehr erfahren ↓</button>
+        </div>
+        <div class="service-details-expanded">
+          <div class="service-details-content">
+            <h4>Was zum Hausmeisterservice gehört:</h4>
+            <p class="expanded-description">Umfassender Hausmeisterservice für die Betreuung Ihrer Immobilie. Von der täglichen Pflege bis zu kleineren Reparaturen - wir sind Ihr zuverlässiger Partner vor Ort.</p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <h5>🏢 Objektbetreuung</h5>
+                <p>Kontrolle und Pflege von Wohn- und Geschäftsgebäuden</p>
+              </div>
+              <div class="detail-item">
+                <h5>🔧 Kleinreparaturen</h5>
+                <p>Schnelle Behebung kleinerer Schäden und Defekte</p>
+              </div>
+              <div class="detail-item">
+                <h5>🧹 Treppenhausreinigung</h5>
+                <p>Professionelle Reinigung von Treppenhäusern und Gemeinschaftsflächen</p>
+              </div>
+              <div class="detail-item">
+                <h5>🌿 Grünflächenpflege</h5>
+                <p>Pflege von Außenanlagen und Grünflächen rund ums Objekt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 </section>
@@ -352,15 +479,15 @@
     <div class="about-content">
       <div class="about-text">
         <h2 class="section-title">Über FFD Garten</h2>
-        <p>Mit über 30 Jahren Erfahrung sind wir Ihr vertrauenswürdiger Partner für alle Garten- und Baudienstleistungen in Linz und Umgebung. Als Familienunternehmen legen wir großen Wert auf persönliche Betreuung, Qualität und Zuverlässigkeit.</p>
+        <p>Mit jahrzehnte langer Erfahrung und über 10 Jahren Selbstständigkeit sind wir Ihr vertrauenswürdiger Partner für alle Garten- und Reinigungsdienstleistungen in Linz und Umgebung. Als Familienunternehmen legen wir großen Wert auf persönliche Betreuung, Qualität und Zuverlässigkeit.</p>
         <p>Unser Team besteht aus qualifizierten Fachkräften, die mit Leidenschaft und Expertise bei der Sache sind. Von der Gartengestaltung über Baumpflege bis hin zu Renovierungsarbeiten - wir bieten Ihnen alles aus einer Hand.</p>
         <div class="about-stats">
           <div class="stat">
-            <h3>30+</h3>
+            <h3>10+</h3>
             <p>Jahre Erfahrung</p>
           </div>
           <div class="stat">
-            <h3>1000+</h3>
+            <h3>100+</h3>
             <p>Zufriedene Kunden</p>
           </div>
           <div class="stat">
@@ -415,6 +542,8 @@
               <option value="reinigung">Reinigungsdienstleistungen</option>
               <option value="renovierung">Renovierungsarbeiten</option>
               <option value="abbruch">Abbrucharbeiten</option>
+              <option value="hausmeister">Hausmeisterservice</option>
+              <option value="schneeraeumung">Schneeräumung & Winterdienst</option>
             </select>
           </div>
           <div class="form-group">
@@ -427,15 +556,16 @@
         <h3>Kontaktinformationen</h3>
         <div class="info-item">
           <h4>📍 Adresse</h4>
-          <p>Musterstraße 123<br>4020 Linz, Österreich</p>
+          <p>Uhlandgasse 22<br>4020 Linz, Österreich</p>
         </div>
         <div class="info-item">
           <h4>📞 Telefon</h4>
           <p><a href="tel:+43676410249">+43 676 410 249</a></p>
+          <p><a href="tel:+4366499898755">+43 664 998 98 755</a></p>
         </div>
         <div class="info-item">
           <h4>📧 E-Mail</h4>
-          <p><a href="mailto:info@ffd-garten.at">info@ffd-garten.at</a></p>
+          <p><a href="mailto:Ffd-garten@outlook.com">ffd-garten@outlook.com</a></p>
         </div>
         <div class="info-item">
           <h4>🕐 Öffnungszeiten</h4>
@@ -472,14 +602,20 @@
           <li><a href="#services">Gartenpflege</a></li>
           <li><a href="#services">Baumfällung</a></li>
           <li><a href="#services">Renovierungsarbeiten</a></li>
+          <li><a href="#services">Abbrucharbeiten</a></li>
+          <li><a href="#services">Reinigungsdienstleistungen</a></li>
+          <li><a href="#services">Hausmeisterservice</a></li>
+          <li><a href="#services">Schneeräumung & Winterdienst</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h4>Folgen Sie uns</h4>
         <div class="social-links">
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="https://www.instagram.com/ffd.garten?igsh=MTJ2MjJtZmg1d2x0eA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+          <a href="https://www.facebook.com/share/1BaMUBYqfk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="img/facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.my-hammer.at/auftragnehmer/ffd-1/bewertungen" target="_blank" rel="noopener noreferrer" aria-label="MyHammer">🔨</a>
         </div>
       </div>
     </div>

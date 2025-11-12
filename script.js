@@ -165,3 +165,80 @@ document.addEventListener('DOMContentLoaded', function() {
         imageObserver.observe(card);
     });
 });
+// Vorher-Nachher Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.slider-handle');
+
+    sliders.forEach(slider => {
+        const container = slider.closest('.slider-container');
+        const beforeWrapper = container.querySelector('.image-before-wrapper');
+        const sliderButton = container.querySelector('.slider-button');
+
+        slider.addEventListener('input', function() {
+            const value = this.value;
+            beforeWrapper.style.width = value + '%';
+            sliderButton.style.left = value + '%';
+        });
+    });
+});
+
+// Image Carousel
+function changeSlide(btn, direction) {
+    const carousel = btn.closest('.carousel-container');
+    const images = carousel.querySelectorAll('.carousel-image');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    let currentIndex = 0;
+
+    // Find current active image
+    images.forEach((img, index) => {
+        if (img.classList.contains('active')) {
+            currentIndex = index;
+        }
+    });
+
+    // Remove active class
+    images[currentIndex].classList.remove('active');
+    if (dots.length > 0) {
+        dots[currentIndex].classList.remove('active');
+    }
+
+    // Calculate new index
+    currentIndex += direction;
+    if (currentIndex >= images.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+
+    // Add active class
+    images[currentIndex].classList.add('active');
+    if (dots.length > 0) {
+        dots[currentIndex].classList.add('active');
+    }
+}
+
+function goToSlide(carousel, index) {
+    const images = carousel.querySelectorAll('.carousel-image');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+
+    images.forEach(img => img.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    images[index].classList.add('active');
+    dots[index].classList.add('active');
+}
+
+// Initialize carousel dots
+document.addEventListener('DOMContentLoaded', function() {
+    const carousels = document.querySelectorAll('.carousel-container');
+
+    carousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('.carousel-image');
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+
+        images.forEach((img, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(carousel, index));
+            dotsContainer.appendChild(dot);
+        });
+    });
+});
