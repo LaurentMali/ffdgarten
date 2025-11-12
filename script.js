@@ -242,3 +242,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Cookie Banner
+function showCookieBanner() {
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    if (!cookieConsent) {
+        setTimeout(() => {
+            document.getElementById('cookieBanner').classList.add('show');
+        }, 1000);
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'all');
+    hideCookieBanner();
+    // Hier kannst du Analytics etc. aktivieren
+    console.log('Alle Cookies akzeptiert');
+}
+
+function acceptEssentialOnly() {
+    localStorage.setItem('cookieConsent', 'essential');
+    hideCookieBanner();
+    console.log('Nur notwendige Cookies akzeptiert');
+}
+
+function hideCookieBanner() {
+    document.getElementById('cookieBanner').classList.remove('show');
+}
+
+// Cookie Banner beim Laden anzeigen
+document.addEventListener('DOMContentLoaded', function() {
+    showCookieBanner();
+});
