@@ -480,3 +480,22 @@ function switchProjektTab(btn, tabIndex) {
         }
     }
 }
+
+// Back to Top Button
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Show/Hide Back to Top Button
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.getElementById('backToTop');
+
+    if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
