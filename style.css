@@ -1399,3 +1399,23 @@ footer {
         right: 10px !important;
     }
 }
+/* Highlighted Projekt Details */
+.projekt-details-content {
+    padding: 0 2rem 2rem;
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%);
+    border-left: 4px solid #4CAF50;
+    border-radius: 0 0 10px 10px;
+}
+
+.projekt-details-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+    padding-top: 1.5rem;
+}
+
+.expanded-description {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1rem;
+}
