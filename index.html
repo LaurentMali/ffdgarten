@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FFD Garten - Professionelle Gartenpflege und Gestaltung aus einer Hand</title>
-  <meta name="description" content="FFD Garten - Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen. 30 Jahre Erfahrung in Linz und Umgebung.">
+  <meta name="description" content="FFD Garten - Ihr Partner für Gartenbau, Bauarbeiten, Abbruch und Reinigungsdienstleistungen. 10+ Jahre Erfahrung in Linz und Umgebung.">
   <link rel="icon" type="image/png" href="img/ffd-logo.png">
   <link rel="apple-touch-icon" href="img/ffd-logo.png">
   <link rel="stylesheet" href="style.css">
@@ -356,15 +356,15 @@
       <!-- Abbrucharbeiten -->
       <div class="service-card" data-service="abbruch">
         <div class="image-carousel">
-          <div class="carousel-container">
-            <div class="carousel-images">
-              <img src="img/abbruch-1.png" alt="Abbrucharbeit 1" class="carousel-image active">
-              <img src="img/abbruch-2.png" alt="Abbrucharbeit 2" class="carousel-image">
-              <img src="img/abbruch-3.png" alt="Abbrucharbeit 3" class="carousel-image">
+          <div class="before-after-slider">
+            <div class="slider-container">
+              <img src="img/abbruch-nachher.png" alt="Nachher" class="image-after">
+              <div class="image-before-wrapper" style="width: 50%;">
+                <img src="img/abbruch-vorher.png" alt="Vorher" class="image-before">
+              </div>
+              <input type="range" min="0" max="100" value="50" class="slider-handle" />
+              <div class="slider-button"></div>
             </div>
-            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
-            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
-            <div class="carousel-dots"></div>
           </div>
         </div>
         <div class="service-content">
@@ -471,6 +471,270 @@
         </div>
       </div>
       </div>
+    </div>
+  </div>
+</section>
+<!-- Weitere Projekte Section -->
+<section id="projekte" class="projekte-section">
+  <div class="container">
+    <h2 class="section-title">Weitere Projekte</h2>
+    <p class="section-subtitle">Einblicke in weitere erfolgreich abgeschlossene Projekte</p>
+
+    <div class="projekte-grid">
+
+      <!-- Projekt 1: Komplette Badsanierung -->
+      <div class="projekt-card">
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/bad-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/bad-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Komplette Badsanierung</h3>
+          <p class="projekt-description">Moderne Badsanierung mit hochwertigen Materialien und durchdachtem Design.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Komplette Modernisierung eines veralteten Badezimmers mit neuen Fliesen, Sanitäranlagen und moderner Beleuchtung.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 2 Wochen
+              </div>
+              <div class="spec-item">
+                <strong>Umfang:</strong> Komplettumbau
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Barrierefreie Dusche
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projekt 2: Erdarbeiten mit neuem Rasen -->
+      <div class="projekt-card">
+        <div class="projekt-carousel">
+          <div class="carousel-container">
+            <div class="carousel-images">
+              <img src="img/erdarbeiten-vorher-2.png" alt="Erdarbeiten Vorher 2" class="carousel-image" data-label="VORHER">
+              <img src="img/erdarbeiten-vorher-1.png" alt="Erdarbeiten Vorher 1" class="carousel-image active" data-label="VORHER">
+              <img src="img/erdarbeiten-nachher-1.png" alt="Erdarbeiten Nachher 1" class="carousel-image" data-label="NACHHER">
+              <img src="img/erdarbeiten-nachher-2.png" alt="Erdarbeiten Nachher 2" class="carousel-image" data-label="NACHHER">
+            </div>
+            <button class="carousel-btn prev" onclick="changeProjektSlide(this, -1)">‹</button>
+            <button class="carousel-btn next" onclick="changeProjektSlide(this, 1)">›</button>
+            <div class="carousel-dots"></div>
+            <div class="carousel-label"></div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Erdarbeiten mit neuem Rasen</h3>
+          <p class="projekt-description">Professionelle Geländemodellierung und Neuanlage einer perfekten Rasenfläche.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Umfangreiche Erdarbeiten mit Bodenaustausch, Planierung und Neuanlage eines hochwertigen Rasens.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 1 Woche
+              </div>
+              <div class="spec-item">
+                <strong>Fläche:</strong> 200m²
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Drainage-System integriert
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projekt 3: Parkplatzumbau mit Sichtschutz -->
+      <div class="projekt-card">
+        <div class="before-after-slider">
+          <div class="slider-container">
+            <img src="img/parkplatz-nachher.png" alt="Nachher" class="image-after">
+            <div class="image-before-wrapper" style="width: 50%;">
+              <img src="img/parkplatz-vorher.png" alt="Vorher" class="image-before">
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider-handle" />
+            <div class="slider-button"></div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Parkplatzumbau mit Sichtschutz</h3>
+          <p class="projekt-description">Neugestaltung eines Parkplatzes mit modernem Sichtschutz und Pflasterung.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Komplette Umgestaltung mit neuer Pflasterung und hochwertigem Sichtschutzelementen für mehr Privatsphäre.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 3 Tage
+              </div>
+              <div class="spec-item">
+                <strong>Umfang:</strong> 3 Stellplätze
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Witterungsbeständiger Sichtschutz
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projekt 4: Terrassenerweiterung für Whirlpool -->
+      <div class="projekt-card">
+        <div class="projekt-carousel">
+          <div class="carousel-container">
+            <div class="carousel-images">
+              <img src="img/terrasse-vorher-1.png" alt="Terrasse Vorher 1" class="carousel-image active" data-label="VORHER">
+              <img src="img/terrasse-vorher-2.png" alt="Terrasse Vorher 2" class="carousel-image" data-label="VORHER">
+              <img src="img/terrasse-nachher-1.png" alt="Terrasse Nachher 1" class="carousel-image" data-label="NACHHER">
+              <img src="img/terrasse-nachher-2.png" alt="Terrasse Nachher 2" class="carousel-image" data-label="NACHHER">
+            </div>
+            <button class="carousel-btn prev" onclick="changeProjektSlide(this, -1)">‹</button>
+            <button class="carousel-btn next" onclick="changeProjektSlide(this, 1)">›</button>
+            <div class="carousel-dots"></div>
+            <div class="carousel-label"></div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Terrassenerweiterung für Whirlpool</h3>
+          <p class="projekt-description">Großzügige Terrassenerweiterung speziell für einen Whirlpool konzipiert.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Erweiterung der bestehenden Terrasse mit verstärktem Unterbau für Whirlpool-Tragfähigkeit und WPC-Dielen.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 1 Woche
+              </div>
+              <div class="spec-item">
+                <strong>Fläche:</strong> 25m² Erweiterung
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Verstärkter Unterbau für 2 Tonnen
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projekt 5: Erd & Kanalarbeiten -->
+      <div class="projekt-card">
+        <div class="projekt-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchProjektTab(this, 0)">Projekt 1</button>
+            <button class="tab-btn" onclick="switchProjektTab(this, 1)">Projekt 2</button>
+          </div>
+          <div class="tab-content active">
+            <div class="projekt-carousel">
+              <div class="carousel-container">
+                <div class="carousel-images">
+                  <img src="img/kanal-p1-1.png" alt="Kanalarbeiten P1 Bild 1" class="carousel-image active">
+                  <img src="img/kanal-p1-2.png" alt="Kanalarbeiten P1 Bild 2" class="carousel-image">
+                  <img src="img/kanal-p1-3.png" alt="Kanalarbeiten P1 Bild 3" class="carousel-image">
+                  <img src="img/kanal-p1-4.png" alt="Kanalarbeiten P1 Bild 4" class="carousel-image">
+                </div>
+                <button class="carousel-btn prev" onclick="changeProjektSlide(this, -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeProjektSlide(this, 1)">›</button>
+                <div class="carousel-dots"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="projekt-carousel">
+              <div class="carousel-container">
+                <div class="carousel-images">
+                  <img src="img/kanal-p2-1.png" alt="Kanalarbeiten P2 Bild 1" class="carousel-image active">
+                  <img src="img/kanal-p2-2.png" alt="Kanalarbeiten P2 Bild 2" class="carousel-image">
+                  <img src="img/kanal-p2-3.png" alt="Kanalarbeiten P2 Bild 3" class="carousel-image">
+                  <img src="img/kanal-p2-4.png" alt="Kanalarbeiten P2 Bild 4" class="carousel-image">
+                </div>
+                <button class="carousel-btn prev" onclick="changeProjektSlide(this, -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeProjektSlide(this, 1)">›</button>
+                <div class="carousel-dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Erd & Kanalarbeiten</h3>
+          <p class="projekt-description">Professionelle Tiefbauarbeiten für neue Kanalleitungen und Drainage-Systeme.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Umfangreiche Erd- und Kanalarbeiten mit Verlegung neuer Leitungen und fachgerechter Wiederherstellung.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 2-3 Wochen pro Projekt
+              </div>
+              <div class="spec-item">
+                <strong>Umfang:</strong> Tiefbau bis 2,5m
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Koordination mit Stadtwerken
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projekt 6: Asphaltierung -->
+      <div class="projekt-card">
+        <div class="projekt-carousel">
+          <div class="carousel-container">
+            <div class="carousel-images">
+              <img src="img/asphalt-vorher.png" alt="Asphaltierung Vorher" class="carousel-image active" data-label="VORHER">
+              <img src="img/asphalt-nachher-1.png" alt="Asphaltierung Nachher 1" class="carousel-image" data-label="NACHHER">
+              <img src="img/asphalt-nachher-2.png" alt="Asphaltierung Nachher 2" class="carousel-image" data-label="NACHHER">
+            </div>
+            <button class="carousel-btn prev" onclick="changeProjektSlide(this, -1)">‹</button>
+            <button class="carousel-btn next" onclick="changeProjektSlide(this, 1)">›</button>
+            <div class="carousel-dots"></div>
+            <div class="carousel-label"></div>
+          </div>
+        </div>
+        <div class="projekt-content">
+          <h3 class="projekt-title">Asphaltierung</h3>
+          <p class="projekt-description">Professionelle Asphaltierung von Zufahrten und Parkflächen.</p>
+          <button class="projekt-expand-btn">Details anzeigen ↓</button>
+        </div>
+        <div class="projekt-details-expanded">
+          <div class="projekt-details-content">
+            <h4>Projektdetails:</h4>
+            <p class="expanded-description">Fachgerechte Asphaltierung mit Unterbau-Vorbereitung und hochwertiger Deckschicht.</p>
+            <div class="projekt-specs">
+              <div class="spec-item">
+                <strong>Dauer:</strong> 2 Tage
+              </div>
+              <div class="spec-item">
+                <strong>Fläche:</strong> 80m²
+              </div>
+              <div class="spec-item">
+                <strong>Besonderheit:</strong> Entwässerung integriert
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -586,7 +850,7 @@
     <div class="footer-content">
       <div class="footer-column">
         <h4>FFD Garten</h4>
-        <p>Ihr zuverlässiger Partner für Gartenbau und mehr seit über 30 Jahren.</p>
+        <p>Ihr zuverlässiger Partner für Gartenbau und mehr seit über 10 Jahren.</p>
       </div>
       <div class="footer-column">
         <h4>Schnelllinks</h4>
@@ -594,6 +858,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Über uns</a></li>
           <li><a href="#services">Dienstleistungen</a></li>
+          <li><a href="#projekte">Weitere Projekte</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
       </div>

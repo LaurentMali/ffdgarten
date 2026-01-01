@@ -255,8 +255,7 @@ function showCookieBanner() {
 
 function acceptCookies() {
     localStorage.setItem('cookieConsent', 'all');
-    hideCookieBanner();
-    // Hier kannst du Analytics etc. aktivieren
+    hideCookieBanner();e
     console.log('Alle Cookies akzeptiert');
 }
 
@@ -274,3 +273,210 @@ function hideCookieBanner() {
 document.addEventListener('DOMContentLoaded', function() {
     showCookieBanner();
 });
+
+// Projekt Card Expand/Collapse
+document.addEventListener("click", function (e) {
+    const btn = e.target.closest(".projekt-expand-btn");
+    if (!btn) return;
+
+    e.preventDefault();
+    const currentCard = btn.closest(".projekt-card");
+    if (!currentCard) return;
+
+    const detail = currentCard.querySelector(".projekt-details-expanded");
+    const isExpanded = currentCard.classList.contains("expanded");
+
+    if (isExpanded) {
+        currentCard.classList.remove("expanded");
+        detail.style.maxHeight = "0px";
+        btn.textContent = "Details anzeigen ↓";
+    } else {
+        currentCard.classList.add("expanded");
+        detail.style.maxHeight = detail.scrollHeight + "px";
+        btn.textContent = "Details ausblenden ↑";
+    }
+});
+
+// Projekt Carousel Navigation
+function changeProjektSlide(btn, direction) {
+    const carousel = btn.closest('.carousel-container');
+    const images = carousel.querySelectorAll('.carousel-image');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const label = carousel.querySelector('.carousel-label');
+    let currentIndex = 0;
+
+    // Find current active image
+    images.forEach((img, index) => {
+        if (img.classList.contains('active')) {
+            currentIndex = index;
+        }
+    });
+
+    // Remove active class
+    images[currentIndex].classList.remove('active');
+    if (dots.length > 0) {
+        dots[currentIndex].classList.remove('active');
+    }
+
+    // Calculate new index
+    currentIndex += direction;
+    if (currentIndex >= images.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+
+    // Add active class
+    images[currentIndex].classList.add('active');
+    if (dots.length > 0) {
+        dots[currentIndex].classList.add('active');
+    }
+
+    // Update label
+    if (label) {
+        const currentLabel = images[currentIndex].getAttribute('data-label');
+        label.textContent = currentLabel || '';
+    }
+}
+
+function goToProjektSlide(carousel, index) {
+    const images = carousel.querySelectorAll('.carousel-image');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const label = carousel.querySelector('.carousel-label');
+
+    images.forEach(img => img.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    images[index].classList.add('active');
+    dots[index].classList.add('active');
+
+    // Update label
+    if (label) {
+        const currentLabel = images[index].getAttribute('data-label');
+        label.textContent = currentLabel || '';
+    }
+}
+
+// Initialize Projekt Carousels
+document.addEventListener('DOMContentLoaded', function() {
+    const projektCarousels = document.querySelectorAll('.projekt-carousel .carousel-container, .tab-content .carousel-container');
+
+    projektCarousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('.carousel-image');
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+        const label = carousel.querySelector('.carousel-label');
+
+        // Create dots
+        if (dotsContainer) {
+            dotsContainer.innerHTML = ''; // Clear existing dots first
+
+            images.forEach((img, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'carousel-dot';
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToProjektSlide(carousel, index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Set initial label
+        if (label && images.length > 0) {
+            const firstLabel = images[0].getAttribute('data-label');
+            label.textContent = firstLabel || '';
+        }
+    });
+});
+
+// Projekt Tab Navigation
+function switchProjektTab(btn, tabIndex) {
+    const projektCard = btn.closest('.projekt-card');
+    const allTabBtns = projektCard.querySelectorAll('.tab-btn');
+    const allTabContents = projektCard.querySelectorAll('.tab-content');
+
+    // Remove active class from all
+    allTabBtns.forEach(b => b.classList.remove('active'));
+    allTabContents.forEach(content => content.classList.remove('active'));
+
+    // Add active class to selected
+    btn.classList.add('active');
+    allTabContents[tabIndex].classList.add('active');
+
+    // Re-initialize carousel for the new tab
+    const newCarousel = allTabContents[tabIndex].querySelector('.carousel-container');
+    if (newCarousel) {
+        const images = newCarousel.querySelectorAll('.carousel-image');
+        const dotsContainer = newCarousel.querySelector('.carousel-dots');
+        const label = newCarousel.querySelector('.carousel-label');
+
+        // Clear existing dots
+        if (dotsContainer) {
+            dotsContainer.innerHTML = '';
+
+            // Create new dots
+            images.forEach((img, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'carousel-dot';
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToProjektSlide(newCarousel, index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Reset to first image
+        images.forEach((img, index) => {
+            img.classList.remove('active');
+            if (index === 0) img.classList.add('active');
+        });
+
+        // Set label for first image
+        if (label && images.length > 0) {
+            const firstLabel = images[0].getAttribute('data-label');
+            label.textContent = firstLabel || '';
+        }
+    }
+}
+// Projekt Tab Navigation
+function switchProjektTab(btn, tabIndex) {
+    const projektCard = btn.closest('.projekt-card');
+    const allTabBtns = projektCard.querySelectorAll('.tab-btn');
+    const allTabContents = projektCard.querySelectorAll('.tab-content');
+
+    // Remove active class from all
+    allTabBtns.forEach(b => b.classList.remove('active'));
+    allTabContents.forEach(content => content.classList.remove('active'));
+
+    // Add active class to selected
+    btn.classList.add('active');
+    allTabContents[tabIndex].classList.add('active');
+
+    // Re-initialize carousel for the new tab
+    const newCarousel = allTabContents[tabIndex].querySelector('.carousel-container');
+    if (newCarousel) {
+        const images = newCarousel.querySelectorAll('.carousel-image');
+        const dotsContainer = newCarousel.querySelector('.carousel-dots');
+        const label = newCarousel.querySelector('.carousel-label');
+
+        // Clear existing dots
+        if (dotsContainer) {
+            dotsContainer.innerHTML = '';
+
+            // Create new dots
+            images.forEach((img, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'carousel-dot';
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToProjektSlide(newCarousel, index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Reset to first image
+        images.forEach((img, index) => {
+            img.classList.remove('active');
+            if (index === 0) img.classList.add('active');
+        });
+
+        // Set label for first image
+        if (label && images.length > 0) {
+            const firstLabel = images[0].getAttribute('data-label');
+            label.textContent = firstLabel || '';
+        }
+    }
+}
